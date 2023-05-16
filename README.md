@@ -194,3 +194,195 @@ H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
 $ git branch -d test
 Deleted branch test (was b2f85fe).
 ```
+### Exercise 2
+
+```bash
+S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ ls
+README.md  index.html  style.css
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ code .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ touch home.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash save
+No local changes to save
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash save
+Saved working directory and index state WIP on dev: b2f85fe first commExercises Bundle 1 Exercise 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash list
+stash@{0}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ touch about
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ mv touch touch.html
+mv: cannot stat 'touch': No such file or directory
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ ls
+README.md  about  index.html  style.css
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ touch about.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ ls
+README.md  about  about.html  index.html  style.css
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ rm about
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ ls
+README.md  about.html  index.html  style.css
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash save
+Saved working directory and index state WIP on dev: b2f85fe first commExercises Bundle 1 Exercise 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash list
+stash@{0}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1
+stash@{1}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ ls
+README.md  index.html  style.css
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ touch team.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git add team.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ ls
+README.md  index.html  style.css  team.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash save
+Saved working directory and index state WIP on dev: b2f85fe first commit on Git Exercises Bundle 1 Exercise 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ stash list
+bash: stash: command not found
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash list
+stash@{0}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1 Exercise 1
+stash@{1}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1 Exercise 1
+stash@{2}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1 Exercise 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash pop ^C
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash pop stash@{1}
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{1} (43e2fe229def9b2eef01707541fca73ffbab46ff)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash list
+stash@{0}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1 Exercise 1
+stash@{1}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1 Exercise 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash pop ^C
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash pop stash@{1}
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+Dropped stash@{1} (e10fbf55acd9ecacd2d3a7973384159d7668cb2d)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git commit -m 'stash home and about page '
+[dev 4190cce] stash home and about page
+ 2 files changed, 26 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git push origin dev
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 600 bytes | 300.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions./pull/new/dev
+remote:
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ * [new branch]      dev -> dev
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash list
+stash@{0}: WIP on dev: b2f85fe first commit on Git Exercises Bundle 1 Exercise 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ ^C
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git stash pop stash@{0}
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped stash@{0} (c287b45a5466c01535726617fe881a6c6a29e63d)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git reset --hard team.html
+fatal: Cannot do hard reset with paths.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git reset --hard
+HEAD is now at 4190cce stash home and about page
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
+```
+
