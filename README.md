@@ -384,5 +384,370 @@ On branch dev
 nothing to commit, working tree clean
 
 H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (dev)
-```
 
+```
+## bundle 2 
+### Exercise 1
+```bash
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ touch services.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git commit -m "creation and modifocation of service page"
+[ft/bundle-2 3df3548] creation and modifocation of service page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 495 bytes | 495.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions./pull/new/ft/bundle-2
+remote:
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git branch -m master main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git branch
+  dev
+* ft/bundle-2
+  main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git branch -m main master
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git branch
+  dev
+* ft/bundle-2
+  master
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git branch
+  dev
+* ft/bundle-2
+  master
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git branch -m master main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/master'.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git pull
+From https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+ * [new branch]      main       -> origin/main
+Your configuration specifies to merge with the ref 'refs/heads/master'
+from the remote, but no such ref was fetched.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ ^C
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git branch --set-upstream-to=origin/main
+branch 'main' set up to track 'origin/main'.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git pull
+Already up to date.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ lgit branch
+bash: lgit: command not found
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git branch
+  dev
+  ft/bundle-2
+* main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git branch -d ft/bundle-2
+error: The branch 'ft/bundle-2' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D ft/bundle-2'.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git branch
+  dev
+  ft/bundle-2
+* main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git restore --staged services.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git commit -m "changes in services page"
+[main 08fb554] changes in services page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 services.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git push
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 3.97 KiB | 13.00 KiB/s, done.
+From https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+   b2f85fe..743778d  main       -> origin/main
+Merge made by the 'ort' strategy.
+ README.md | 388 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ```
+ 
+## bundle 2
+
+### Exercise 2
+
+```bash 
+ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git diff
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git diff
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git diff main
+diff --git a/services.html b/services.html
+index 10c0fab..2333b83 100644
+--- a/services.html
++++ b/services.html
+@@ -7,8 +7,9 @@
+     <title>services page</title>
+ </head>
+ <body>
+-    <h2> our services online now and everywhere</h2>
+-        <p>the new services we offer and on good price</p>
++    <h2> our services online now</h2>
++        <p>the new services we offer</p>
++        <p>we offer these kind of services</p>
+
+ </body>
+ </html>
+\ No newline at end of file
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git merge
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git switch main
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git merge ft/service-redesign
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git diff
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git diff main
+diff --git a/services.html b/services.html
+index 10c0fab..9af325e 100644
+--- a/services.html
++++ b/services.html
+@@ -7,8 +7,9 @@
+     <title>services page</title>
+ </head>
+ <body>
+-    <h2> our services online now and everywhere</h2>
+-        <p>the new services we offer and on good price</p>
+
++    <h2> our services online now</h2>
++        <p>the new services we offer</p>
++        <p>we offer these kind of services</p>
+ </body>
+ </html>
+\ No newline at end of file
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git status
+On branch ft/service-redesign
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   services.html
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign|MERGING)
+$ git commit -m "resolve merge conflict"
+[ft/service-redesign cb781ef] resolve merge conflict
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git status
+On branch ft/service-redesign
+nothing to commit, working tree clean
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git diff
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git diff main
+diff --git a/services.html b/services.html
+index 10c0fab..9af325e 100644
+--- a/services.html
++++ b/services.html
+@@ -7,8 +7,9 @@
+     <title>services page</title>
+ </head>
+ <body>
+-    <h2> our services online now and everywhere</h2>
+-        <p>the new services we offer and on good price</p>
+
++    <h2> our services online now</h2>
++        <p>the new services we offer</p>
++        <p>we offer these kind of services</p>
+ </body>
+ </html>
+\ No newline at end of file
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git merge main
+Already up to date.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git checkout ^C
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git merge ft/service-redesign
+Already up to date.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git push origin
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 666 bytes | 333.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+   0eb6ff1..cb781ef  ft/service-redesign -> ft/service-redesign
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
+$
+```
