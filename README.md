@@ -1438,6 +1438,139 @@ To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
    68716d2..5b6cfb3  ft/home-page-redesign -> ft/home-page-redesign
 ```
 
+## Bundle 4
+### Exercise 1
+
+``` bash 
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote add https://github.com/DidierShemaGatete/git_exercise-2.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote add origin https://github.com/DidierShemaGatete/git_exercise-2.git
+error: remote origin already exists.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote
+origin
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote add git-copy
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote
+origin
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.61 KiB | 5.00 KiB/s, done.
+From https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+   847dfe4..3c4924b  main       -> origin/main
+Updating 847dfe4..3c4924b
+Fast-forward
+ README.md | 120 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 120 insertions(+)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote add origin https://github.com/DidierShemaGatete/git_exercise-2.git
+error: remote origin already exists.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote add git-copy
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote add git-copy https://github.com/DidierShemaGatete/git_exercise-2.git
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git remote
+git-copy
+origin
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git add .; git commit -m "new changes in the home page"
+[main d99f579] new changes in the home page
+ 1 file changed, 10 insertions(+)
+ create mode 100644 home.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 470 bytes | 235.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+   3c4924b..d99f579  main -> main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git push git-copy
+Enumerating objects: 56, done.
+Counting objects: 100% (56/56), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (56/56), 15.75 KiB | 1.05 MiB/s, done.
+Total 56 (delta 26), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (26/26), done.
+To https://github.com/DidierShemaGatete/git_exercise-2.git
+ * [new branch]      main -> main
+```
+
+
 
 
 
