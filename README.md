@@ -1320,4 +1320,124 @@ To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
    cb61805..7feaaaa  ft/faq-page -> ft/faq-page
 ```
 
+### Exercise 2
+
+```bash 
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ ls
+README.md  index.html  services.html  style.css  team.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git commit -m "changes on the services page"
+[main 6f7fbfc] changes on the services page
+ 1 file changed, 11 insertions(+)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git push
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 3.15 KiB | 17.00 KiB/s, done.
+From https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+   7e9c446..6719a64  main       -> origin/main
+Merge made by the 'ort' strategy.
+ README.md | 570 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 570 insertions(+)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 740 bytes | 740.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+   6719a64..847dfe4  main -> main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git switch ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign)
+$ git rebase main
+CONFLICT (modify/delete): team.html deleted in 7feaaaa (Revert "created team page") and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not apply 7feaaaa... Revert "created team page"
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 7feaaaa... Revert "created team page"
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign|REBASE 4/4)
+$ git rebase --continue
+team.html: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign|REBASE 4/4)
+$ git rebase main
+Current branch ft/home-page-redesign is up to date.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign)
+$ ls
+README.md  contact.html  faq.html  home.html  index.html  services.html  style.css  team.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign)
+$ git commit -m "changes in the home page"
+[ft/home-page-redesign 5b6cfb3] changes in the home page
+ 1 file changed, 10 insertions(+)
+ create mode 100644 home.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/home-page-redesign)
+$ git push
+fEnumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 451 bytes | 451.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+   68716d2..5b6cfb3  ft/home-page-redesign -> ft/home-page-redesign
+```
+
+
+
 
