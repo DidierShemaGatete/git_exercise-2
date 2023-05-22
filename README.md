@@ -751,3 +751,573 @@ To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
 H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/service-redesign)
 $
 ```
+
+## Bundle 3
+### Exercise 1
+
+
+```bash 
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/team-page)
+$ git log
+commit 719669546a39d6e13a59c22f0614faba6aefb818 (HEAD -> ft/team-page, origin/ft/team-page)
+Merge: 50e295b 321a71c
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 12:19:54 2023 +0300
+
+    deleting services page
+
+commit 50e295bde1ae369305e2a5c3851dbb9d967088de
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:59:16 2023 +0300
+
+    created team page
+
+commit 1aa39746dfb479027d727b55a5123ad3e3d62076
+Merge: 2d30dc8 aef25f1
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:56:04 2023 +0300
+
+    Merge branch 'main' into ft/service-redesign
+
+commit 321a71c76b6ae1cfc964b6888c54658d9b48cad4
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:45:59 2023 +0300
+
+    removing services file
+
+commit 556e7c677e6767808c3c9ebeba20b8b0ab7cc202
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 20:49:58 2023 +0300
+
+    new team page
+
+commit aef25f10c1745e140283380a4312422c5608e5d9
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 16:09:18 2023 +0300
+
+    The Gym git Exercise
+
+    Bundle 2 bash commands
+
+commit cb781ef2299a58b0d66d6815f1766a3f16770013 (origin/ft/service-redesign)
+Merge: 0eb6ff1 2d30dc8
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:49:55 2023 +0300
+
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+Merge: 0218952 357d631
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 14:58:45 2023 +0300
+
+    Merge pull request #3 from DidierShemaGatete/ft/bundle-2
+
+    html page
+
+commit 357d631b192b8695c1a5e054c9ddbf43d59726d0 (origin/ft/bundle-2, ft/bundle-2)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 14:51:50 2023 +0300
+
+    ceated and modified a service page
+
+commit 021895247b548f0e2f2d503311c0939861035e5c
+Merge: 08fb554 743778d
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:33:45 2023 +0300
+
+    Merge branch 'main' of https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+:
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+Merge: 0218952 357d631
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 14:58:45 2023 +0300
+
+    Merge pull request #3 from DidierShemaGatete/ft/bundle-2
+
+    html page
+
+commit 357d631b192b8695c1a5e054c9ddbf43d59726d0 (origin/ft/bundle-2, ft/bundle-2)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 14:51:50 2023 +0300
+
+    ceated and modified a service page
+
+commit 021895247b548f0e2f2d503311c0939861035e5c
+Merge: 08fb554 743778d
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:33:45 2023 +0300
+
+    Merge branch 'main' of https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+
+commit 08fb55473abaf8a7449b4019e6a36b970ff51b29
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:21:48 2023 +0300
+:
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+Merge: 0218952 357d631
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 14:58:45 2023 +0300
+
+    Merge pull request #3 from DidierShemaGatete/ft/bundle-2
+
+    html page
+
+commit 357d631b192b8695c1a5e054c9ddbf43d59726d0 (origin/ft/bundle-2, ft/bundle-2)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 14:51:50 2023 +0300
+
+    ceated and modified a service page
+
+commit 021895247b548f0e2f2d503311c0939861035e5c
+Merge: 08fb554 743778d
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:33:45 2023 +0300
+
+    Merge branch 'main' of https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+
+commit 08fb55473abaf8a7449b4019e6a36b970ff51b29
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:21:48 2023 +0300
+
+    changes in services page
+
+commit 743778d08030d646cefb1f740921d6eb39481af3
+:
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+Merge: 0218952 357d631
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 14:58:45 2023 +0300
+
+    Merge pull request #3 from DidierShemaGatete/ft/bundle-2
+
+    html page
+
+commit 357d631b192b8695c1a5e054c9ddbf43d59726d0 (origin/ft/bundle-2, ft/bundle-2)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 14:51:50 2023 +0300
+
+    ceated and modified a service page
+
+commit 021895247b548f0e2f2d503311c0939861035e5c
+Merge: 08fb554 743778d
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:33:45 2023 +0300
+
+    Merge branch 'main' of https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+
+commit 08fb55473abaf8a7449b4019e6a36b970ff51b29
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:21:48 2023 +0300
+:
+commit 719669546a39d6e13a59c22f0614faba6aefb818 (HEAD -> ft/team-page, origin/ft/team-page)
+Merge: 50e295b 321a71c
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 12:19:54 2023 +0300
+
+    deleting services page
+
+commit 50e295bde1ae369305e2a5c3851dbb9d967088de
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:59:16 2023 +0300
+
+    created team page
+
+commit 1aa39746dfb479027d727b55a5123ad3e3d62076
+Merge: 2d30dc8 aef25f1
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:56:04 2023 +0300
+
+    Merge branch 'main' into ft/service-redesign
+
+commit 321a71c76b6ae1cfc964b6888c54658d9b48cad4
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:45:59 2023 +0300
+
+    removing services file
+
+commit 556e7c677e6767808c3c9ebeba20b8b0ab7cc202
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 20:49:58 2023 +0300
+
+    new team page
+
+commit aef25f10c1745e140283380a4312422c5608e5d9
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 16:09:18 2023 +0300
+
+    The Gym git Exercise
+
+    Bundle 2 bash commands
+
+commit cb781ef2299a58b0d66d6815f1766a3f16770013 (origin/ft/service-redesign)
+Merge: 0eb6ff1 2d30dc8
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:49:55 2023 +0300
+
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+:
+commit 719669546a39d6e13a59c22f0614faba6aefb818 (HEAD -> ft/team-page, origin/ft/team-page)
+Merge: 50e295b 321a71c
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 12:19:54 2023 +0300
+
+    deleting services page
+
+commit 50e295bde1ae369305e2a5c3851dbb9d967088de
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:59:16 2023 +0300
+
+    created team page
+
+commit 1aa39746dfb479027d727b55a5123ad3e3d62076
+Merge: 2d30dc8 aef25f1
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:56:04 2023 +0300
+
+    Merge branch 'main' into ft/service-redesign
+
+commit 321a71c76b6ae1cfc964b6888c54658d9b48cad4
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:45:59 2023 +0300
+
+    removing services file
+
+commit 556e7c677e6767808c3c9ebeba20b8b0ab7cc202
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 20:49:58 2023 +0300
+
+    new team page
+
+commit aef25f10c1745e140283380a4312422c5608e5d9
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 16:09:18 2023 +0300
+
+    The Gym git Exercise
+
+    Bundle 2 bash commands
+
+commit cb781ef2299a58b0d66d6815f1766a3f16770013 (origin/ft/service-redesign)
+Merge: 0eb6ff1 2d30dc8
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:49:55 2023 +0300
+
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+Merge: 0218952 357d631
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 14:58:45 2023 +0300
+
+    Merge pull request #3 from DidierShemaGatete/ft/bundle-2
+
+    html page
+
+commit 357d631b192b8695c1a5e054c9ddbf43d59726d0 (origin/ft/bundle-2, ft/bundle-2)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 14:51:50 2023 +0300
+
+    ceated and modified a service page
+
+commit 021895247b548f0e2f2d503311c0939861035e5c
+Merge: 08fb554 743778d
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:33:45 2023 +0300
+
+    Merge branch 'main' of https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+
+commit 08fb55473abaf8a7449b4019e6a36b970ff51b29
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 11:21:48 2023 +0300
+
+    changes in services page
+
+commit 743778d08030d646cefb1f740921d6eb39481af3
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 09:58:18 2023 +0300
+
+    Git Exercise
+
+    bash preview of The Gym Git Exercise Solutions Bundle 1 Exercise 2
+
+commit e57acbc26b7bad641acf65c3c207f8a0493c7b8b
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 09:51:48 2023 +0300
+
+    Update README.md
+
+    Terminal preview of The Gym Git Exercise Solutions Bundle 1 Exercise 1
+
+commit b2f85fe8cc0b79cf7431449f9ef5af02e627d000 (origin/master)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 06:54:38 2023 +0300
+
+    first commit on Git Exercises Bundle 1 Exercise 1
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git cherry-pic 50e295bde1ae369305e2a5c3851dbb9d967088de
+git: 'cherry-pic' is not a git command. See 'git --help'.
+
+The most similar command is
+        cherry-pick
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git cherrypic 50e295bde1ae369305e2a5c3851dbb9d967088de
+git: 'cherrypic' is not a git command. See 'git --help'.
+
+The most similar command is
+        cherry-pick
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git cherry-pick 50e295bde1ae369305e2a5c3851dbb9d967088de
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+On branch ft/contact-page
+You are currently cherry-picking commit 50e295b.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+nothing to commit, working tree clean
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page|CHERRY-PICKING)
+$ git commit --allow-empty
+[ft/contact-page 120da21] created team page
+ Date: Sat May 20 16:59:16 2023 +0300
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ code .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ ls
+README.md  contact.html  index.html  services.html  style.css  team.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git add .; git commit -m "changes in contact page"
+[ft/contact-page 43211f1] changes in contact page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 641 bytes | 160.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions./pull/new/ft/contact-page
+remote:
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git commit -am "added faq page"
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git commit -am "added faq page"
+[ft/faq-page cb61805] added faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git push ft/faq-page
+fatal: 'ft/faq-page' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 460 bytes | 460.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions./pull/new/ft/faq-page
+remote:
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git revert 50e295bde1ae369305e2a5c3851dbb9d967088de
+[ft/faq-page 7feaaaa] Revert "created team page"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 team.html
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 280 bytes | 5.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+   cb61805..7feaaaa  ft/faq-page -> ft/faq-page
+```
+
+
